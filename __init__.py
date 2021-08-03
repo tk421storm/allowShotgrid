@@ -36,9 +36,6 @@ coreIPs=[gethostbyname('localhost')]
 coreHostsFile=join(currentRoot, 'coreHostNames.txt')
 with open(coreHostsFile, 'r') as myFile:
 	[coreIPs.extend(lookupHost(line.strip())) for line in myFile]
-	
-coreHostNames=['jkjklol.com', 'vfx.shotgunstudio.com', 'www.github.com']
-
 
 #
 # github!
