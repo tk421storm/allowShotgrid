@@ -1,5 +1,5 @@
 # allowShotgrid
-Get a list of required IP addresses for shotgun connections. Includes logic to block all other connections with IPtables.
+Get a list of required IP addresses for Shotgun/ShotGrid connections. Includes logic to block all other connections with IPtables.
 
 Based on IP advice from https://knowledge.autodesk.com/support/shotgrid/learn-explore/caas/CloudHelp/cloudhelp/ENU/SG-Administrator/files/ar-general-security/SG-Administrator-ar-general-security-ar-ecosystem-html-html.html
 
