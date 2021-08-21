@@ -19,8 +19,11 @@ def trustIP(ipAddress):
 coreIPs=allIPs()
 print 'will allow '+str(len(coreIPs))+' ips:'
 for ip in coreIPs:
-	print str(ip)
-	trustIP(str(ip))
+	if ':' not in ip:
+		print str(ip)
+		trustIP(str(ip))
+	else:
+		print "skipping ipv6 "+str(ip)
 
 
 #add a return to the SHOTGUN chain

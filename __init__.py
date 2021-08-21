@@ -16,7 +16,7 @@ def lookupHost(hostname):
 		ips=[]
 		for tupler in junk:
 			ip=tupler[4][0]
-			if ip not in ips and ':' not in ip:   #no ipv6 junk
+			if ip not in ips:
 				ips.append(ip)
 				
 		return ips
