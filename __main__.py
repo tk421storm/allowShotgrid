@@ -17,13 +17,13 @@ def trustIP(ipAddress):
 	check_output(['/usr/sbin/iptables', '-A', 'SHOTGUN', '-d', ipAddress, '-j', 'ACCEPT'])
 
 coreIPs=allIPs()
-print 'will allow '+str(len(coreIPs))+' ips:'
+print('will allow '+str(len(coreIPs))+' ips:')
 for ip in coreIPs:
 	if ':' not in ip:
-		print str(ip)
+		print('allowing '+str(ip))
 		trustIP(str(ip))
 	else:
-		print "skipping ipv6 "+str(ip)
+		print("  skipping ipv6 "+str(ip))
 
 
 #add a return to the SHOTGUN chain

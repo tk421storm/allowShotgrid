@@ -1,6 +1,6 @@
 import requests
 
-from cPickle import dump
+from pickle import dump
 from uuid import uuid4
 from os.path import join, dirname, realpath
 from traceback import format_exc
@@ -21,7 +21,7 @@ def lookupHost(hostname):
 				
 		return ips
 	except:
-		print "warning: only returning one result for "+hostname
+		print("warning: only returning one result for "+hostname)
 		return [gethostbyname(hostname)]
 
 #
